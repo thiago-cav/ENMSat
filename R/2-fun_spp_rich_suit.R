@@ -6,4 +6,4 @@ spp_rich_suit <- function(x, ...){
 
 #test
 mata <- c(0.3, 0.7, 0.9, 0.2, 0, 0.1)
-spp_rich(mata)
+spp_rich_suit(mata)
