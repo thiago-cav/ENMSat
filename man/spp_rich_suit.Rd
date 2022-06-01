@@ -22,5 +22,5 @@ This function calculate species richness based on an arbitrary threshold of
 0.5 of suitability rasters
 }
 \examples{
-spp_rich_suit()
+
 }
