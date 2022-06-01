@@ -14,13 +14,10 @@ spp_rich_suit(x, na.rm = FALSE)
 \item{na.rm}{argument}
 }
 \value{
-species richnees maps
+species richness raster
 }
 \description{
 Species richness from suitability rasters
 This function calculate species richness based on an arbitrary threshold of
 0.5 of suitability rasters
-}
-\examples{
-
 }

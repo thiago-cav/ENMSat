@@ -7,10 +7,10 @@
 #' @param x raster of Habitat suitability
 #' @param na.rm argument
 #'
-#' @return species richnees maps
+#' @return species richness raster
 #' @export
 #'
-#' @examples
+#' @importFrom terra app
 #'
 
 spp_rich_suit <- function(x, na.rm = FALSE){
