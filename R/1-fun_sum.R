@@ -1,11 +1,11 @@
-#' sum_vectors - function to sum vectors
-#' This function calculate richness of a vector of habitat suitability
+#' Sum vectors > 0.5
+#' This function calculate the sum of a vector with values larger than 0.5
 #'
 #'
 #' @param x a numerical vector of habitat suitability values
 #' @param ... arguments to be passed to internal functions
 #'
-#' @return numeric
+#' @return numeric sum
 #' @export
 #'
 #' @examples
@@ -17,3 +17,5 @@ sum_vectors <- function(x, ...){
   r <- sum(x>0.5, ...)
   return(r)
 }
+
+document()
