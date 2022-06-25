@@ -4,7 +4,7 @@
 #'
 #'
 #'
-#' @param x raster of Habitat suitability
+#' @param x rasterstack of habitat suitability maps
 #' @param na.rm argument
 #'
 #' @return species richness raster

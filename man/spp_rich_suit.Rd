@@ -9,7 +9,7 @@ This function calculate species richness based on an arbitrary threshold of
 spp_rich_suit(x, na.rm = FALSE)
 }
 \arguments{
-\item{x}{raster of Habitat suitability}
+\item{x}{rasterstack of habitat suitability maps}
 
 \item{na.rm}{argument}
 }
