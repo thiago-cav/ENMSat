@@ -2,9 +2,8 @@
 % Please edit documentation in R/3-extract_scales.R
 \name{extract_scales}
 \alias{extract_scales}
-\title{Function extract_scales
-A function to extract values of remote sensing predictors at
-different, usually applied, spatial resolutions
+\title{A function to extract values of remote sensing predictors at
+different spatial resolutions
 The resolution are resampled from the oringal raster at 1km to res
 of 5k and 10km}
 \usage{
@@ -13,7 +12,7 @@ extract_scales(r, p, na.rm = TRUE)
 \arguments{
 \item{r}{rasterfile of a remote sensing variable or any predictor}
 
-\item{p}{a SpatialPointsDataFrame obeject}
+\item{p}{a SpatialPointsDataFrame object}
 
 \item{na.rm}{argument}
 }
@@ -21,9 +20,8 @@ extract_scales(r, p, na.rm = TRUE)
 a data.frame
 }
 \description{
-Function extract_scales
 A function to extract values of remote sensing predictors at
-different, usually applied, spatial resolutions
+different spatial resolutions
 The resolution are resampled from the oringal raster at 1km to res
 of 5k and 10km
 }

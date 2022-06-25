@@ -1,16 +1,16 @@
-#' Function extract_scales
 #' A function to extract values of remote sensing predictors at
-#' different, usually applied, spatial resolutions
+#' different spatial resolutions
 #' The resolution are resampled from the oringal raster at 1km to res
 #' of 5k and 10km
 #'
 #' @param r rasterfile of a remote sensing variable or any predictor
-#' @param p a SpatialPointsDataFrame obeject
+#' @param p a SpatialPointsDataFrame object
 #' @param na.rm argument
 #'
 #' @return a data.frame
 #' @export
 #'
+#' @importFrom sp coordinates
 #'
 extract_scales <- function(r, p, na.rm = TRUE){
   #extract the variables at the original scale

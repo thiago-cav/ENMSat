@@ -3,4 +3,5 @@
 export(extract_scales)
 export(spp_rich_suit)
 export(sum_vectors)
+importFrom(sp,coordinates)
 importFrom(terra,app)
