@@ -40,6 +40,6 @@ plot(points_test, add = TRUE)
 df <- extract_scales(tree_cover, points_test)
 df
 ```
-V1, V2, and V3 in this example are the variable extracted at ~1km, ~5km and ~10km resolution, respectively.
+v1, v2, and v3 in this example are the variable extracted at ~1km, ~5km and ~10km resolution, respectively.
 
 --------------
