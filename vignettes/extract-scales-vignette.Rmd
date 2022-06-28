@@ -1,0 +1,45 @@
+---
+title: "extract-scales-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{extract-scales-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ENMSat)
+library(raster)
+```
+
+# Package data
+Inspect data from ENMSat
+```{r}
+data("tree_cover")
+plot(tree_cover)
+```
+
+## Package function
+The function `stract_scales` can extract values (from occurrence points) of remote sensing predictors at different spatial resolutions
+
+```{r}
+#loading remote sensing raster file from the package
+data("tree_cover")
+# Sampling 25 random points within the raster
+points_test <- sampleRandom(tree_cover, size=25, cells=FALSE, sp=TRUE)
+plot(tree_cover)
+plot(points_test, add = TRUE)
+
+df <- extract_scales(tree_cover, points_test)
+df
+```
+V1, V2, and V3 in this example are the variable extracted at ~1km, ~5km and ~10km resolution, respectively.
+
+--------------
