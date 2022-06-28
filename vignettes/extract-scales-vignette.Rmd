@@ -27,7 +27,7 @@ plot(tree_cover)
 ```
 
 ## Package function
-The function `stract_scales` can extract values (from occurrence points) of remote sensing predictors at different spatial resolutions
+The function `stract_scales` can extract values (from occurrence points) of remote sensing predictors at different spatial resolutions. The resolution are resampled with an aggregation factor of 5 and 3.
 
 ```{r}
 #loading remote sensing raster file from the package
@@ -40,6 +40,6 @@ plot(points_test, add = TRUE)
 df <- extract_scales(tree_cover, points_test)
 df
 ```
-v1, v2, and v3 in this example are the variable extracted at ~1km, ~5km and ~10km resolution, respectively.
+v1, v2, and v3 in this example are the variable extracted at ~1km (original raster resolution), ~5km and ~10km resolution, respectively.
 
 --------------

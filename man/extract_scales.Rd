@@ -3,10 +3,7 @@
 \name{extract_scales}
 \alias{extract_scales}
 \title{A function to extract values of remote sensing predictors at
-different spatial resolutions
-The resolution are resampled with an aggregation factor of 5 and 3.
-For example, if using a raster at 1km res, the variables will be extracted at
-~1km, ~5k and ~10km resolution.}
+different spatial resolutions}
 \usage{
 extract_scales(r, p, na.rm = TRUE)
 }
@@ -23,7 +20,4 @@ a data.frame
 \description{
 A function to extract values of remote sensing predictors at
 different spatial resolutions
-The resolution are resampled with an aggregation factor of 5 and 3.
-For example, if using a raster at 1km res, the variables will be extracted at
-~1km, ~5k and ~10km resolution.
 }
